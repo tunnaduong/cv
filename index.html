@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <title>CV - Dương Tùng Anh</title>
+    <style>
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        margin: 0;
+        background: #fff;
+        color: #333;
+        line-height: 1.6;
+      }
+      h1,
+      h2,
+      h3 {
+        margin-bottom: 0.7em;
+        color: #222;
+      }
+      h3 {
+        margin-top: 0;
+        margin-bottom: 5px;
+      }
+      h1 {
+        font-size: 2.2em;
+        margin-bottom: 0;
+      }
+      p,
+      ul {
+        margin-top: 0;
+        margin-bottom: 1em;
+      }
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+      hr {
+        margin: 2em 0;
+        border: none;
+        border-top: 1px solid #ccc;
+      }
+      ul {
+        padding-left: 20px;
+      }
+      section {
+        margin-bottom: 2em;
+      }
+      .main {
+        display: flex;
+        gap: 30px;
+      }
+      .left {
+        background-color: aquamarine;
+        padding: 30px 20px;
+        min-width: 250px;
+      }
+      .right {
+        padding: 40px;
+      }
+      .f-light {
+        font-weight: 300;
+      }
+      .upper {
+        text-transform: uppercase;
+      }
+      .l-space {
+        letter-spacing: 5.6px;
+      }
+      h2 {
+        border-bottom: 1px solid #ccc;
+        text-transform: uppercase;
+        font-size: 1.2em;
+        padding-bottom: 5px;
+      }
+      .left h2 {
+        border-bottom: 1px solid #222;
+      }
+      .name {
+        margin-bottom: 30px;
+      }
+      img {
+        border: 5px solid white;
+      }
+      .avatar {
+        text-align: center;
+      }
+      .left section {
+        padding: 0 5px;
+      }
+      .icon {
+        background-color: #089b6a;
+        border-radius: 50%;
+        height: 28px;
+        width: 28px;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        margin: 5px 0;
+        margin-right: 5px;
+      }
+      .flex {
+        display: flex;
+      }
+      .flex-fill {
+        flex: 1;
+      }
+      .vertical-line {
+        width: 1px;
+        height: calc(100% - 15px);
+        background-color: #333;
+        margin: auto 0;
+        position: absolute;
+        transform: translateX(4px) translateY(20px);
+      }
+      .timeline {
+        display: flex;
+        flex-direction: row;
+        position: relative;
+      }
+      .date {
+        font-size: medium;
+        font-weight: 400;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <div class="left">
+        <div class="avatar">
+          <img
+            src="./tunganh.png"
+            alt="Dương Tùng Anh"
+            style="width: 150px; height: 150px; border-radius: 50%"
+          />
+        </div>
+        <section>
+          <h2>Liên lạc</h2>
+          <span class="icon">📞</span>
+          (+84) 707 006 421<br />
+          <span class="icon">🌐</span>
+          <a href="https://tunnaduong.com">tunnaduong.com</a><br />
+          <span class="icon">📍</span>
+          Kim Bảng, Hà Nam<br />
+          <span class="icon">✉️</span>
+          <a href="mailto:tunnaduong@gmail.com">tunnaduong@gmail.com</a><br />
+          <span class="icon">💻</span>
+          GitHub: <a href="https://github.com/tunnaduong">tunnaduong</a><br />
+          <span class="icon">💼</span>
+          LinkedIn: <a href="https://linkedin.com/in/tunganh03">tunganh03</a>
+        </section>
+
+        <section>
+          <h2>Học vấn</h2>
+          <i>2023 – Hiện tại</i>
+          <div>
+            <strong class="upper">Cao đẳng FPT Polytechnic</strong>
+            <ul>
+              <li>Chuyên ngành Lập trình Web</li>
+              <li>Học kỳ 6</li>
+              <li>GPA: 9.0</li>
+            </ul>
+          </div>
+          <i>2021 – 2023</i>
+          <div>
+            <strong>Đại học FPT Hà Nội</strong>
+            <ul>
+              <li style="font-size: 14px">Chuyên ngành Kỹ thuật phần mềm</li>
+              <li>GPA: 9.2</li>
+            </ul>
+          </div>
+          <i>2018 – 2021</i>
+          <div>
+            <strong>THPT Chuyên Biên Hòa</strong>
+            <ul>
+              <li>Chuyên ngành Tiếng Nga</li>
+              <li>GPA: 9.2</li>
+            </ul>
+          </div>
+        </section>
+
+        <section>
+          <h2>Ngoại ngữ</h2>
+          <ul>
+            <li>
+              <div class="flex">
+                <div class="flex-fill">Tiếng Anh</div>
+                <i>Cao cấp</i>
+              </div>
+            </li>
+            <li>
+              <div class="flex">
+                <div class="flex-fill">Tiếng Nga</div>
+                <i>Sơ cấp</i>
+              </div>
+            </li>
+            <li>
+              <div class="flex">
+                <div class="flex-fill">Tiếng Trung</div>
+                <i>Sơ cấp</i>
+              </div>
+            </li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Sở thích</h2>
+          <ul>
+            <li>🎾 Chơi bóng bàn</li>
+            <li>🎧 Nghe nhạc</li>
+            <li>📚 Đọc sách</li>
+          </ul>
+        </section>
+
+        <section class="avatar">
+          <img src="./qrcode.jpg" alt="QR Code" width="160" />
+          <p>Quét để xem CV Online</p>
+        </section>
+      </div>
+      <div class="right">
+        <div class="name">
+          <h1 class="upper">Dương Tùng Anh</h1>
+          <p class="upper f-light l-space">Lập trình viên Full-stack</p>
+        </div>
+        <section>
+          <h2>Mục tiêu nghề nghiệp</h2>
+          <p>
+            Tôi mong muốn phát triển kỹ năng lập trình Web & Mobile trong môi
+            trường chuyên nghiệp, đóng góp vào các dự án thực tế. Trong tương
+            lai, tôi hướng đến vai trò fullstack developer và có thể dẫn dắt đội
+            ngũ kỹ thuật.
+          </p>
+        </section>
+
+        <section>
+          <h2>Dự Án</h2>
+          <div class="timeline">
+            <div class="vertical-line"></div>
+            <ul>
+              <li>
+                <h3>
+                  <div class="flex">
+                    <div class="flex-fill">
+                      Thanh niên Chuyên Biên Hòa Online
+                    </div>
+                    <i class="date">11-2024 – Hiện tại</i>
+                  </div>
+                </h3>
+                <p>
+                  Thiết kế UI/UX, Lập trình viên Web & Mobile App<br />
+                  Một nền tảng mạng xã hội và diễn đàn giúp học sinh trường THPT
+                  Chuyên Biên Hòa kết nối, chia sẻ và phát triển.
+                </p>
+              </li>
+
+              <li>
+                <h3>
+                  <div class="flex">
+                    <div class="flex-fill">C4K60</div>
+                    <i class="date">03-2019 – 04/2024</i>
+                  </div>
+                </h3>
+                <p>
+                  Lập trình viên Web & Mobile App<br />
+                  Ứng dụng giúp cập nhật thông tin lớp chuyên Nga K60, chia sẻ
+                  khoảnh khắc và kết nối với thành viên lớp.
+                </p>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <section>
+          <h2>Kỹ Năng</h2>
+          <ul>
+            <li>
+              <strong>Ngôn ngữ:</strong> Tiếng Anh, Tiếng Nga (sơ cấp), Tiếng
+              Trung (sơ cấp)
+            </li>
+            <li>
+              <strong>Lập trình:</strong> PHP, HTML, CSS, Javascript, C/C++,
+              Java, Python, MySQL
+            </li>
+            <li>
+              <strong>Thư viện/Framework:</strong> ReactJS, React Native,
+              TailwindCSS, Laravel, VueJS, NodeJS, JQuery
+            </li>
+            <li>
+              <strong>Công cụ:</strong> Git/GitHub, GitHub Actions, Vercel,
+              Cloudflare, Google Cloud, AWS, Azure, Docker
+            </li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Kinh Nghiệm Làm Việc</h2>
+          <div class="timeline">
+            <div class="vertical-line"></div>
+            <ul>
+              <li>
+                <h3>
+                  <div class="flex">
+                    <div class="flex-fill">Viettel Hà Nam</div>
+                    <i class="date">03/2025 – Hiện tại</i>
+                  </div>
+                </h3>
+                <p>
+                  Thực tập sinh CNTT<br />
+                  Góp ý giao diện, cải thiện tính năng cho PhuLy-S - app phản
+                  ánh hiện trường của người dân.
+                </p>
+              </li>
+
+              <li>
+                <h3>
+                  <div class="flex">
+                    <div class="flex-fill">VNTEL</div>
+                    <i class="date">01/2022 – 06/2022</i>
+                  </div>
+                </h3>
+                <p>
+                  Lập trình viên Front-end ReactJS<br />
+                  Tham gia nhiều dự án, học ReactJS và React Native.
+                </p>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <section>
+          <h2>Giải Thưởng</h2>
+          <ul>
+            <li>Ong vàng Spring 2024 – Sinh viên top 1</li>
+            <li>Ong vàng Summer 2024 – Sinh viên top 1</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Hoạt Động</h2>
+          <ul>
+            <li>CLB IT – FPT Polytechnic Hà Nam</li>
+            <li>Bán hàng gây quỹ – FPT Polytechnic Hà Nam</li>
+            <li>CLB Bóng bàn – THPT Chuyên Biên Hòa</li>
+          </ul>
+        </section>
+      </div>
+    </div>
+  </body>
+</html>
