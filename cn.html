@@ -11,6 +11,9 @@
         color: #333;
         line-height: 1.6;
       }
+      * {
+        zoom: 0.9969;
+      }
       h1,
       h2,
       h3 {
@@ -133,6 +136,26 @@
       ul li:last-child p {
         margin-bottom: 10px;
       }
+      .skill-item {
+        margin-bottom: 15px;
+      }
+      .skill-header {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 5px;
+        font-weight: 500;
+      }
+      .skill-bar-bg {
+        background-color: #eee;
+        height: 8px;
+        border-radius: 4px;
+        overflow: hidden;
+      }
+      .skill-bar-fill {
+        height: 100%;
+        background-color: #089b6a;
+        border-radius: 4px;
+      }
     </style>
   </head>
   <body>
@@ -220,7 +243,6 @@
             <li>🎾 打乒乓球</li>
             <li>🎧 听音乐</li>
             <li>📚 读书</li>
-            <li>🎮 玩游戏</li>
           </ul>
         </section>
 
@@ -300,21 +322,64 @@
 
         <section>
           <h2>技能</h2>
-          <ul>
-            <li><strong>语言：</strong> 英语，中文 (HSK3)，俄语 (初级)</li>
-            <li>
-              <strong>编程：</strong> PHP, HTML, CSS, Javascript, C/C++, Java,
-              Python, MySQL, PostgreSQL
-            </li>
-            <li>
-              <strong>库/框架：</strong> ReactJS, React Native, TailwindCSS,
-              Laravel, VueJS, NodeJS, JQuery, NextJS
-            </li>
-            <li>
-              <strong>工具：</strong> Git/GitHub, GitHub Actions, Vercel,
-              Cloudflare, Google Cloud, AWS, Azure, Docker, Figma
-            </li>
-          </ul>
+          <div style="display: flex; gap: 40px; align-items: flex-start">
+            <div style="flex: 1">
+              <ul>
+                <li><strong>语言：</strong> 英语，中文 (HSK3)，俄语 (初级)</li>
+                <li>
+                  <strong>编程：</strong> PHP, HTML, CSS, Javascript, C/C++,
+                  Java, Python, MySQL, PostgreSQL
+                </li>
+                <li>
+                  <strong>库/框架：</strong> ReactJS, React Native, TailwindCSS,
+                  Laravel, VueJS, NodeJS, JQuery, NextJS
+                </li>
+                <li>
+                  <strong>工具：</strong> Git/GitHub, GitHub Actions, Vercel,
+                  Cloudflare, Google Cloud, AWS, Azure, Docker, Figma
+                </li>
+              </ul>
+            </div>
+
+            <div style="flex: 1">
+              <div class="skill-item">
+                <div class="skill-header">
+                  <span>英语</span>
+                  <span>90%</span>
+                </div>
+                <div class="skill-bar-bg">
+                  <div class="skill-bar-fill" style="width: 90%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-header">
+                  <span>中文</span>
+                  <span>45%</span>
+                </div>
+                <div class="skill-bar-bg">
+                  <div class="skill-bar-fill" style="width: 45%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-header">
+                  <span>Web 开发</span>
+                  <span>85%</span>
+                </div>
+                <div class="skill-bar-bg">
+                  <div class="skill-bar-fill" style="width: 85%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-header">
+                  <span>移动应用开发</span>
+                  <span>65%</span>
+                </div>
+                <div class="skill-bar-bg">
+                  <div class="skill-bar-fill" style="width: 65%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
         </section>
 
         <section>

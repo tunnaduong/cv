@@ -11,6 +11,9 @@
         color: #333;
         line-height: 1.6;
       }
+      * {
+        zoom: 0.99;
+      }
       h1,
       h2,
       h3 {
@@ -133,6 +136,26 @@
       ul li:last-child p {
         margin-bottom: 10px;
       }
+      .skill-item {
+        margin-bottom: 15px;
+      }
+      .skill-header {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 5px;
+        font-weight: 500;
+      }
+      .skill-bar-bg {
+        background-color: #eee;
+        height: 8px;
+        border-radius: 4px;
+        overflow: hidden;
+      }
+      .skill-bar-fill {
+        height: 100%;
+        background-color: #089b6a;
+        border-radius: 4px;
+      }
     </style>
   </head>
   <body>
@@ -220,7 +243,6 @@
             <li>🎾 Chơi bóng bàn</li>
             <li>🎧 Nghe nhạc</li>
             <li>📚 Đọc sách</li>
-            <li>🎮 Chơi game</li>
           </ul>
         </section>
 
@@ -311,24 +333,66 @@
 
         <section>
           <h2>Kỹ Năng</h2>
-          <ul>
-            <li>
-              <strong>Ngôn ngữ:</strong> Tiếng Anh, Tiếng Trung (HSK3), Tiếng
-              Nga (sơ cấp)
-            </li>
-            <li>
-              <strong>Lập trình:</strong> PHP, HTML, CSS, Javascript, C/C++,
-              Java, Python, MySQL, PostgreSQL
-            </li>
-            <li>
-              <strong>Thư viện/Framework:</strong> ReactJS, React Native,
-              TailwindCSS, Laravel, VueJS, NodeJS, JQuery, NextJS
-            </li>
-            <li>
-              <strong>Công cụ:</strong> Git/GitHub, GitHub Actions, Vercel,
-              Cloudflare, Google Cloud, AWS, Azure, Docker, Figma
-            </li>
-          </ul>
+          <div style="display: flex; gap: 40px; align-items: flex-start">
+            <div style="flex: 1">
+              <ul>
+                <li>
+                  <strong>Ngôn ngữ:</strong> Tiếng Anh, Tiếng Trung (HSK3),
+                  Tiếng Nga (sơ cấp)
+                </li>
+                <li>
+                  <strong>Lập trình:</strong> PHP, HTML, CSS, Javascript, C/C++,
+                  Java, Python, MySQL, PostgreSQL
+                </li>
+                <li>
+                  <strong>Thư viện/Framework:</strong> ReactJS, React Native,
+                  TailwindCSS, Laravel, VueJS, NodeJS, JQuery, NextJS
+                </li>
+                <li>
+                  <strong>Công cụ:</strong> Git/GitHub, GitHub Actions, Vercel,
+                  Cloudflare, Google Cloud, AWS, Azure, Docker, Figma
+                </li>
+              </ul>
+            </div>
+            <div style="flex: 1">
+              <div class="skill-item">
+                <div class="skill-header">
+                  <span>Tiếng Anh</span>
+                  <span>90%</span>
+                </div>
+                <div class="skill-bar-bg">
+                  <div class="skill-bar-fill" style="width: 90%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-header">
+                  <span>Tiếng Trung</span>
+                  <span>45%</span>
+                </div>
+                <div class="skill-bar-bg">
+                  <div class="skill-bar-fill" style="width: 45%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-header">
+                  <span>Lập trình Web</span>
+                  <span>85%</span>
+                </div>
+                <div class="skill-bar-bg">
+                  <div class="skill-bar-fill" style="width: 85%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-header">
+                  <span>Lập trình Mobile App</span>
+                  <span>65%</span>
+                </div>
+                <div class="skill-bar-bg">
+                  <div class="skill-bar-fill" style="width: 65%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
         </section>
 
         <section>
